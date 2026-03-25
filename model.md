@@ -11,7 +11,7 @@
 |-|-|-|-|
 |stu\_id|INT|PRIMARY KEY, NOT NULL, AUTO\_INCREMENT|学生学号（主键）|
 |stu\_name|VARCHAR(20)|NOT NULL|学生姓名|
-|gender|CHAR(1)|NOT NULL|性别（男/女）|
+|gender |CHAR(1)|NOT NULL|性别（男/女）|
 |age|INT|NOT NULL|年龄|
 |major|VARCHAR(50)|NOT NULL|所属专业 |
 |phone|VARCHAR(11)||联系电话 |
