@@ -6,7 +6,7 @@
 ## 1. 学生表（student）
 | 字段名 | 数据类型 | 约束 | 注释 |
 |--------|----------|------|------|
-| stu_id | INT | PRIMARY KEY, NOT NULL, AUTO_INCREMENT | 学生学号（主键） |
+| stu_idx | INT | PRIMARY KEY, NOT NULL, AUTO_INCREMENT | 学生学号（主键） |
 | stu_name | VARCHAR(20) | NOT NULL | 学生姓名 |
 | gender | CHAR(1) | NOT NULL | 性别（男/女） |
 | age | INT | NOT NULL | 年龄 |
