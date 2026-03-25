@@ -23,4 +23,17 @@
 | title | VARCHAR(20) | NOT NULL | 职称（讲师/教授等） |
 
 ## 3. 课程表（course）
+字段名         数据类型        约束
+course_id      INT            主键、非空、自增  -- 课程号
+course_name    VARCHAR(50)    非空             -- 课程名称
+credit         INT            非空             -- 学分
+class_hour     INT            非空             -- 课时
+teacher_id     INT            外键(教师表)      -- 授课教师编号
+
 ## 4. 选课成绩表（score）
+字段名         数据类型        约束
+score_id       INT            主键、非空、自增  -- 成绩记录编号
+student_id     INT            外键(学生表)、非空 -- 学号
+course_id      INT            外键(课程表)、非空 -- 课程号
+score          DECIMAL(5,1)   非空             -- 分数
+exam_time      DATE           非空             -- 考试时间
